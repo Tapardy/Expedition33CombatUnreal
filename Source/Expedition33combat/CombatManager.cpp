@@ -25,7 +25,7 @@ TMap<UActorComponent*, float> ACombatManager::ProcessCombatants(UPARAM(ref) TMap
             UE_LOG(LogTemp, Log, TEXT("Combatant: %s | Initiative: %.2f"), *ComponentName, Initiative);
         }
     }
-    
+    TurnOrder = SortedTurnOrder;
     return SortedTurnOrder;
 }
 
